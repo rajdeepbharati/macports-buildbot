@@ -8,7 +8,7 @@
 
     python3 -m venv .venv
     source .venv/bin/activate
-    pip install buildbot buildbot-worker pyyaml
+    pip install -r requirements.txt
 
 #### 2. Create new directory with buildbot master configuration
 
