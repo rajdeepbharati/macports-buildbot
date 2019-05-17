@@ -8,7 +8,7 @@
 
     python3 -m venv .venv
     source .venv/bin/activate
-    pip install buildbot buildbot-worker
+    pip install buildbot buildbot-worker pyyaml
 
 #### 2. Create new directory with buildbot master configuration
 
@@ -20,7 +20,8 @@
     cd master
     ln -s .../path/to/contrib/buildbot-test/master.cfg
     cp .../path/to/contrib/buildbot-test/config.json.sample config.json
-    cp .../path/to/contrib/buildbot-test/slaves.json.sample slaves.json
+    cp .../path/to/contrib/buildbot-test/workers.json.sample workers.json
+    cp .../path/to/contrib/buildbot-test/workers.yml workers.yml
 
 Check settings in `config.json` and adapt as needed.
 
