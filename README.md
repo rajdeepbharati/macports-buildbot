@@ -19,11 +19,11 @@
 
     cd master
     ln -s .../path/to/contrib/buildbot-test/master.cfg
-    cp .../path/to/contrib/buildbot-test/config.json.sample config.json
-    cp .../path/to/contrib/buildbot-test/workers.json.sample workers.json
-    cp .../path/to/contrib/buildbot-test/workers.yml workers.yml
+    cp .../path/to/contrib/buildbot-test/config.sample.yml config.yml
+    cp .../path/to/contrib/buildbot-test/workers.sample.yml workers.yml
+    cp .../path/to/contrib/buildbot-test/secrets.sample.yml secrets.yml
 
-Check settings in `config.json` and adapt as needed.
+Check settings in `config.yml` and adapt as needed.
 
 #### 4. Set up authentication
 
@@ -53,3 +53,15 @@ buildbot.
     buildbot stop mp-buildbot/master
 
 ### Setting up buildbot worker on localhost
+
+#### 1. Create workers
+
+    cd mp-buildbot
+
+    buildbot-worker create-worker worker-base localhost:9989 base_10_14_x86_64 pwd
+    buildbot-worker create-worker worker-ports localhost:9989 ports_10_14_x86_64 pwd
+
+#### 2. Start the workers
+
+    buildbot-worker start worker-base
+    buildbot-worker start worker-ports
