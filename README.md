@@ -61,7 +61,15 @@ buildbot.
     buildbot-worker create-worker worker-base localhost:9989 base_10_14_x86_64 pwd
     buildbot-worker create-worker worker-ports localhost:9989 ports_10_14_x86_64 pwd
 
-#### 2. Start the workers
+#### 2. Install tools
 
-    buildbot-worker start worker-base
-    buildbot-worker start worker-ports
+Make sure `getopt` is installed in `/opt/macports-test` prefix of MacPorts installation.
+
+#### 3. Set PATH
+
+    export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/bin:/usr/bin:/usr/local/bin
+
+#### 3. Start the workers
+
+    sudo buildbot-worker start worker-base
+    sudo buildbot-worker start worker-ports
