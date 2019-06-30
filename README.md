@@ -58,8 +58,8 @@ buildbot.
 
     cd mp-buildbot
 
-    buildbot-worker create-worker worker-base localhost:9989 base_10_14_x86_64 pwd
-    buildbot-worker create-worker worker-ports localhost:9989 ports_10_14_x86_64 pwd
+    sudo buildbot-worker create-worker worker-base localhost:9989 base_10_14_x86_64 pwd
+    sudo buildbot-worker create-worker worker-ports localhost:9989 ports_10_14_x86_64 pwd
 
 #### 2. Install tools
 
