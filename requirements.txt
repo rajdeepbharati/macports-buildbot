@@ -33,5 +33,5 @@ toml==0.10.0
 tox==3.12.1
 Twisted==19.2.0
 txaio==18.8.1
-virtualenv==16.6.0
+virtualenv==16.6.2
 zope.interface==4.6.0
