@@ -2,7 +2,7 @@ attrs==19.1.0
 autobahn==19.5.1
 Automat==0.7.0
 buildbot==2.3.1
-buildbot-worker==2.3.1
+buildbot-worker==2.8.4
 constantly==15.1.0
 decorator==4.4.0
 entrypoints==0.3
