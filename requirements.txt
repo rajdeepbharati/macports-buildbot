@@ -30,7 +30,7 @@ sqlalchemy-migrate==0.12.0
 sqlparse==0.3.0
 Tempita==0.5.2
 toml==0.10.0
-tox==3.12.1
+tox==3.21.4
 Twisted==19.2.0
 txaio==18.8.1
 virtualenv==16.6.0
